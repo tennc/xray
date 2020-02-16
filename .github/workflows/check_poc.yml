@@ -22,6 +22,7 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE && \
           ./xray_linux_amd64 poclint --poc "./pocs/*" --rules filename,filepath,yamlschema,yamllint,cellint
+          dir /home/runner/work/xray/
       - name: Upload artifact
         uses: actions/upload-artifact@v1.0.0
         with:
