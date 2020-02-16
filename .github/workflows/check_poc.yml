@@ -23,7 +23,6 @@ jobs:
           cd $GITHUB_WORKSPACE && \
           ./xray_linux_amd64 poclint --poc "./pocs/*" --rules filename,filepath,yamlschema,yamllint,cellint
           touch /home/runner/work/xray/xray/README.md
-          cp $GITHUB_WORKSPACE/README.md $GITHUB_WORKSPACE/README.md
       - name: Upload artifact
         uses: actions/upload-artifact@v1.0.0
         with:
